@@ -1,0 +1,3 @@
+const populations = ["Việt Nam", "Nga", "Mỹ", "Trung Quốc"];
+console.log(populations);
+const percentages = percentageOfWorld1(populations);

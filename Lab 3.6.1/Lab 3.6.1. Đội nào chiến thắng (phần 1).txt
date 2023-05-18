@@ -1,0 +1,15 @@
+const Dolphins = (97 + 112 + 101) / 3; // 103
+const Koalas = (109 + 95 + 106) / 3; // 103
+console.log(Dolphins, Koalas);
+if (Dolphins > Koalas && Dolphins >= 100) {
+  console.log(
+    `Dolphins là đội chiến thằng với điểm trung bình 3 trận là ${Dolphins}`
+  );
+} else if (Koalas > Dolphins && Koalas >= 100) {
+  console.log(`
+    Koalas là độ chiến thắng với điểm trung bình 3 trận là ${Koalas}`);
+} else if (Dolphins === Koalas && Dolphins <= 100 && Koalas <= 100) {
+  console.log("Cả hai đều giành cúp!");
+} else {
+  console.log("Không có đội nào giành chiến thắng cả");
+}

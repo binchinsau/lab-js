@@ -1,0 +1,29 @@
+const massMark1 = 95;
+const heightMark1 = 1.88;
+const massJohn1 = 85;
+const heightJohn1 = 1.76;
+let markHigherBMI = massMark1 / (heightMark1 * heightMark1);
+let johnHigherBMI = massJohn1 / (heightJohn1 * heightJohn1);
+
+console.log("BMI của Mark là " + markHigherBMI);
+console.log("BMI của John là " + johnHigherBMI);
+if (markHigherBMI >= johnHigherBMI) {
+  console.log(
+    "BMI của Mark là",
+    markHigherBMI,
+    "cao hơn BMI của John",
+    johnHigherBMI,
+    "là",
+    markHigherBMI - johnHigherBMI,
+    "BMI"
+  );
+} else
+  console.log(
+    "BMI của Mark là",
+    markHigherBMI,
+    "thấp hơn BMI của John",
+    johnHigherBMI,
+    "là",
+    johnHigherBMI - markHigherBMI,
+    "BMI"
+  );

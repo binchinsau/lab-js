@@ -1,0 +1,7 @@
+const population = [10, 1441, 332, 83];
+const percentages2 = [];
+for (let i = 0; i < population.length; i++) {
+  const perc = percentageOfWorld1(population[i]);
+  percentages2.push(perc);
+}
+console.log(percentages2);

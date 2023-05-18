@@ -1,0 +1,14 @@
+const myObject = {
+  country: "Việt Nam",
+  capital: "Hà Nội",
+  population: 7,
+  language: "Vietnamese",
+  neighbours: ["Thailand", "Lào", "China", "Campuchia"],
+};
+console.log(
+  `${myObject.country} has ${
+    (myObject.population + 2, myObject["population"])
+  } million ${myObject.language}-speaking people, ${
+    myObject.neighbours.length
+  } neighbouring countries and a capital called ${myObject.capital}`
+);

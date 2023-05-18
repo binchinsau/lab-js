@@ -1,0 +1,9 @@
+const population = [10, 1441, 332, 83];
+const percentages3 = [];
+let rep = 0;
+while (rep < population.length) {
+  const perc = percentageOfWorld1(population[rep]);
+  rep++;
+  percentages3.push(perc);
+}
+console.log(percentages3);

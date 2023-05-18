@@ -1,0 +1,8 @@
+const percentageOfWorld3 = (country, population) => {
+  const percentRatio = (population / 7900) * 100;
+
+  return `${country} có ${population} tỷ dân , chiếm ${percentRatio.toFixed(
+    1
+  )}% dân số thế giới.`;
+};
+console.log(percentageOfWorld3("Mỹ", 2514));

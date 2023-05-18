@@ -1,0 +1,18 @@
+let numNeighbours = prompt(
+  "How many neighbor countries does your country have?"
+);
+
+if (Number(numNeighbours) === 1) {
+  console.log("Only 1 border!");
+} else if (numNeighbours > 1) {
+  console.log("More than 1 border");
+} else {
+  console.log("No borders");
+}
+
+
+
+///  Thay == thành ===, và kiểm tra lại code với các giá trị 'numNeighbours' tương tự. Điều gì sẽ xảy ra khi numNeighbours = 1? Tại sao lại như vậy?
+- Vì numNeighbours và string không giống với number
+- Khi bạn so sánh khác loại, kết quả sẽ luôn trả về false.
+- Thay đổi kiểu thành string thành number để cho 2 giá trị giống nhau. 

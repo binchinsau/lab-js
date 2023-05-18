@@ -1,0 +1,9 @@
+function describeCoutry(country, population, capitalCity) {
+  console.log(
+    `${country} has ${population} milion people and its capital city is ${capitalCity}`
+  );
+  return;
+}
+const result1 = describeCoutry("Đà Nẵng", 4, "Thọ Quang");
+const result2 = describeCoutry("Sài gòn", 6, "Quận 7");
+const result3 = describeCoutry("Hội An", 1, "Nguyễn Tất Thành");

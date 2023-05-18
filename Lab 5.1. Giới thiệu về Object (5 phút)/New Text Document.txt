@@ -1,0 +1,9 @@
+
+const myObject = {
+  country: "Việt Nam",
+  capital: "Đà Nẵng",
+population: "6",
+  language: "Vietnamese",
+  neighbours: "Thailand",
+};
+console.log(myObject);

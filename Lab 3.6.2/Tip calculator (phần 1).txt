@@ -1,0 +1,28 @@
+const hasBill = prompt("Vui lòng nhập hóa đơn?");
+const hasTip15 = (hasBill * 15) / 100;
+const hasTip20 = (hasBill * 20) / 100;
+
+if (Number(hasBill) > 50 && Number(hasBill) < 300) {
+  console.log(
+    `The bill was ${hasBill}, the tip was ${hasTip15}, and the total value ${
+      Number(hasBill) + hasTip15
+    }`
+  );
+} else if (Number(hasBill) >= 300) {
+  console.log(
+    `The bill was ${hasBill}, the tip was ${hasTip20}, and the total value ${
+      Number(hasBill) + hasTip20
+    }`
+  );
+} else if (Number(hasBill) <= 50) {
+  console.log("Not tip");
+}
+
+const bill = prompt("Vui lòng nhập hóa đơn?");
+const tip =
+  Number(bill) <= 300 && Number(bill) >= 50 ? Number(bill) * 0.15 : bill * 0.2;
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value ${
+    Number(bill) + tip
+  }`
+);

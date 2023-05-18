@@ -1,0 +1,10 @@
+function percentageOfWorld1(population) {
+  return (population / 7900) * 100;
+}
+const describePopulation = function (country, population) {
+  const percentages = percentageOfWorld1(population);
+  const description = `${country} có ${population} tỷ dân , chiếm ${percentages} % dân số thế giới.`;
+  console.log(description);
+};
+
+describePopulation("VN", 234);

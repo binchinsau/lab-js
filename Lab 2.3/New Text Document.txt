@@ -1,0 +1,16 @@
+let country = "Đà Nẵng";
+let continent = "Đông Nam Á";
+const population = 1;
+let isIsland = true;
+let isVietNam = false;
+const language = "Vietnamese";
+let conpare = isIsland > isVietNam;
+console.log(conpare);
+console.log(isIsland, country, continent, population + ` Triệu Dân`);
+console.log(population / 2 + ` Triệu Dân`);
+console.log(population > 6000000);
+console.log(population < 33000000);
+console.log(
+  (description =
+    country + ` and its ` + population + ` million people speak ` + language)
+);

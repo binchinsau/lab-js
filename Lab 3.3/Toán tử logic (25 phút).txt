@@ -1,0 +1,11 @@
+const hasPopulation = prompt("Vui lòng thêm dân số mà bạn yêu cầu?");
+const language = prompt("Vui lòng nhập ngôn ngữ", "");
+const notIsland = prompt("Có phải đảo quốc không?", "");
+
+if (
+  Number(hasPopulation) < 50 &&
+  language === "English" &&
+  notIsland === "No"
+) {
+  console.log("You should live in Portugal :)'");
+} else console.log("Portugal does not meet your criteria :(");

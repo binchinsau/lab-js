@@ -1,0 +1,20 @@
+const Language = 1;
+switch (Language) {
+  case 1:
+    console.log("Chinese or Mandarin: 'MOST number of native speakers!'");
+
+  case 2:
+    console.log("Spanish: '2nd place in number of native speakers'");
+
+  case 3:
+    console.log("English: '3rd place'");
+
+  case 4:
+    console.log("Hindi: 'Number 4'");
+
+  case 5:
+    console.log("Arabic: '5th most spoken language'");
+    break;
+  default:
+    console.log("'Great language too :D'");
+}

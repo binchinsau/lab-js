@@ -1,0 +1,14 @@
+const populations = ["Việt Nam", "Nga", "Mỹ", "Pháp"];
+console.log(populations);
+const percentages = percentageOfWorld1(populations);
+console.log(populations.length);
+const neighbours = ["Campuchia", "Lào", "Trung Quốc"];
+console.log(neighbours);
+const newNeighbours = neighbours.push("Utopia");
+const poppedNeighbours = neighbours.pop();
+console.log(
+  "Probably not a central European country :D",
+  neighbours.includes("Germany")
+);
+const addNeighbours = neighbours.splice(2, 1, "China");
+console.log(addNeighbours);

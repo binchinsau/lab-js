@@ -1,0 +1,9 @@
+let country = "Đà Nẵng";
+let continent = "Đông Nam Á";
+let population = "Triệu Dân";
+let isIsland = true;
+let isVietNam = false;
+let language;
+let conpare = isIsland > isVietNam;
+console.log(conpare);
+console.log(isIsland, country, continent, population);

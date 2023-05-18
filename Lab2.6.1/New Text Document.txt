@@ -1,0 +1,8 @@
+const massMark1 = 95;
+const heightMark1 = 1.88;
+const massJohn1 = 85;
+const heightJohn1 = 1.76;
+let BMImark = massMark1 / (heightMark1 * heightMark1);
+let BMIjohn = massJohn1 / (heightJohn1 * heightJohn1);
+// let markHigherBMI = true;
+console.log((markHigherBMI = BMImark > BMIjohn));

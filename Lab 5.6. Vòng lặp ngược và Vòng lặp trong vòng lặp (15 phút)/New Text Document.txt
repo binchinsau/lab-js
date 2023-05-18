@@ -1,0 +1,5 @@
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let y = 1; y < listOfNeighbours[i].length; y++) {
+    console.log(`${listOfNeighbours[i][y]}`);
+  }
+}
