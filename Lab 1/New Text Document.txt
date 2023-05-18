@@ -4,3 +4,6 @@ let population = "Milion People";
 console.log(country);
 console.log(continent);
 console.log((69 * 69) / 69, population);
+
+
+/////////////////
