@@ -1,3 +1,13 @@
 {
-  "editor.inlineSuggest.showToolbar": "onHover"
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "cSpell.words": [
+    "danh",
+    "diện",
+    "Điền",
+    "không",
+    "mảng",
+    "sách",
+    "thành",
+    "Thêm"
+  ]
 }

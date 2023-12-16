@@ -11,9 +11,12 @@ const descriptionEl = document.querySelector(".weather-description");
 const tempAfter = document.querySelector(".after-temp");
 const countryEl = document.querySelector(".country-logo");
 const listEl = document.querySelector(".hidden");
+const citiesEl = document.querySelector(".cities");
 
 const apiKey = "3506b4d87f89755cd7a66a24d39ac3d7";
+const cities = [];
 
+//Tạo một mảng đại diện cho thành phố mới
 form.addEventListener("submit", e => {
   e.preventDefault();
 
@@ -27,26 +30,34 @@ form.addEventListener("submit", e => {
     .then(data => {
       const { main, name, sys, weather } = data;
 
-      listEl.classList.remove("hidden");
+      //Mảng đại diện cho thành phố mới
+      const newCity = {
+        name: name,
+        country: sys.country,
+        tempC: Math.round(main.temp - 273.15),
+        iconSrc: `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`,
+        description: weather[0].description,
+      };
+      //Thêm thành phố mới vào danh sách
+      cities.push(newCity);
 
-      cityNameEl.textContent = name;
-
-      countryEl.textContent = `${sys.country}`;
-
-      const tempC = Math.round(main.temp - 273.15);
-
-      tempEl.textContent = `${tempC}`;
-
-      iconEl.src = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
-
-      descriptionEl.textContent = `${weather[0].description}`;
-
-      tempAfter.textContent = `°C`;
+      citiesEl.innerHTML = cities
+        .map(city => {
+          return `<li class="city">
+        <span class="city-name">${city.name}</span><span class="country-logo">${city.country}</span
+        ><br /><span class="city-temp">${city.tempC}</span
+        ><span class="after-temp">°C</span><br /><img
+          src="${city.iconSrc}"
+          alt=""
+          class="weather-icon"
+        /><br /><span class="weather-description">${city.description}</span>
+      </li>`;
+        })
+        .join("");
     })
-
     .catch(error => {
-      msg.textContent = error.message;
-      // msg.textContent = "Please search for a valid city :(";
+      // msg.textContent = error.message;
+      msg.textContent = "Please search for a valid city! ( Điền không dấu)";
     });
 
   msg.textContent = "";
